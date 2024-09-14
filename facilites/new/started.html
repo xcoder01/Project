@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule a Demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="started.css" />
+  </head>
+  <body>
+    <section class="home" id="Home">
+      <header>
+        <div class="header-content">
+          <a href="#" class="logo" style="padding: 0 100px">
+            <img
+              src="/main/image/Ahjin.jpg"
+              alt="Logo"
+              style="height: 40px; width: 50px"
+            />
+            Ahjin
+          </a>
+          <nav class="navbar" style="padding: 0px 100px">
+            <ul class="Nav">
+              <li>
+                <a
+                  href="/main/Assignment.html"
+                  class="Navbar-link"
+                  data-Navbar-link
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#Achivements" class="Navbar-link" data-Navbar-link
+                  >Achivements</a
+                >
+              </li>
+              <li>
+                <a href="/Blog/sports.html" class="Navbar-link" data-Navbar-link
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Schedule/Schedule.html"
+                  class="Navbar-link"
+                  data-Navbar-link
+                  >Event</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Contact Us/Contact.html"
+                  class="Navbar-link"
+                  data-Navbar-link
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Developers Details/index.html"
+                  class="Navbar-link"
+                  data-Navbar-link
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Login And Signup/login.html"
+                  class="Navbar-link"
+                  data-Navbar-link
+                  >Login/Signup</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="secondary-nav">
+          <ul>
+            <li><a href="/facilites/new/Facilites.html">Facilities</a></li>
+            <li><a href="/Schedule/Schedule.html">Schedules</a></li>
+            <li><a href="/Teams/team.html">Teams</a></li>
+            <li>
+              <a href="/Certification/certification.html"
+                >Certification Program</a
+              >
+            </li>
+            <li>
+              <a href="/Historical-Moments/history.html">Historical Matches</a>
+            </li>
+            <li><a href="/Gallary/gallary.html">Photo Gallery</a></li>
+            <li><a href="/Sponsorship/sponsorship.html">Sponsorship</a></li>
+            <li><a href="/FAQs/FAQs.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Home Section -->
+      <div class="hero-section" style="padding-top: 20px">
+        <div class="hero">
+          <div class="hero-overlay"></div>
+          <div class="hero-text">
+            <h1>Welcome to the Facilities-form</h1>
+            <p>Discover the fascinating history of sports through the ages!</p>
+            <a href="#facilities" type="button" class="learn-more-button"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="form-container">
+        <h2>Schedule A Demo</h2>
+        <form>
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="role">Your Role</label>
+            <select id="role" name="role" required>
+              <option value="" selected disabled>Please select</option>
+              <option>President</option>
+              <option>Register</option>
+              <option>Board Member</option>
+              <option>Administrator</option>
+              <option>Coach</option>
+              <option>Parent</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="organization">Name of Organization</label>
+            <input type="text" id="organization" name="organization" required />
+          </div>
+          <div class="form-group">
+            <label for="website">Website</label>
+            <input type="url" id="website" name="website" />
+          </div>
+          <div class="form-group">
+            <label for="sport">Sport</label>
+            <select id="sport" name="sport" required>
+              <option value="" selected disabled>Please select</option>
+              <option>Swimming</option>
+              <option>Basketball</option>
+              <option>Football</option>
+              <option>Badmintion</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" class="state" />
+          </div>
+          <div class="form-group">
+            <label for="players">Number of Players</label>
+            <input type="number" id="players" name="players" required />
+          </div>
+          <div class="form-group">
+            <label for="help">How Can We Help?</label>
+            <textarea id="help" name="help"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="recaptcha">Verification</label>
+            <div id="recaptcha"></div>
+          </div>
+          <div class="form-group">
+            <button type="submit">Submit Form</button>
+          </div>
+          <div>
+            <a href="Facilites.html" class="button">Previous page</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="info">
+        <h2><i class="fas fa-handshake"></i>We Care About You!</h2>
+        <p>
+          We are excited to learn about your league, what you want in an online
+          partner, and consult with you on how we can make your next season
+          easy!
+        </p>
+        <h2><i class="fas fa-star"></i>The Trusted Leader</h2>
+        <p>
+          With over 17 years of experience and league partners in every state,
+          we are a partner you can trust to take your league to the next level.
+        </p>
+        <h2><i class="fas fa-clock"></i>Quick Setup & Easy To Use</h2>
+        <p>
+          Designed by athletes. Made for everyone. No technical skills
+          necessary. Backed by the best team in the industry.
+        </p>
+        <h2><i class="fas fa-headset"></i>Premium Support</h2>
+        <p>
+          We make it easy to get up and running quickly. Our dedicated support
+          team provides responsive support and is here to help you every step of
+          the way.
+        </p>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer" id="Contact">
+      <div class="footer-top section">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">Team</a>
+            <p class="text">Ahjin</p>
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Our links</p>
+            </li>
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#" class="footer-link">Achivements</a></li>
+            <li><a href="#" class="footer-link">Blog & News</a></li>
+            <li><a href="#" class="footer-link">Hall of Fames</a></li>
+            <li><a href="#" class="footer-link">Tickets</a></li>
+            <li><a href="#" class="footer-link">Live</a></li>
+            <li><a href="#" class="footer-link">Tickets</a></li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Other links</p>
+            </li>
+            <li><a href="#" class="footer-link">FAQ</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="#" class="footer-link">Support</a></li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+            <li class="footer-item">
+              <div class="footer-item-icon">
+                <ion-icon name="call"></ion-icon>
+              </div>
+              <div>
+                <a href="tel:+977-9749341049" class="footer-item-link"
+                  >+977-9749341049</a
+                >
+              </div>
+            </li>
+            <li class="footer-item">
+              <div class="footer-item-icon">
+                <ion-icon name="mail"></ion-icon>
+              </div>
+              <div>
+                <a
+                  href="mailto:Asura7.42.999@gmail.com"
+                  class="footer-item-link"
+                  >Asura7.42.999@gmail.com</a
+                >
+              </div>
+            </li>
+            <li class="footer-item">
+              <div class="footer-item-icon">
+                <ion-icon name="location"></ion-icon>
+              </div>
+              <address class="footer-item-link">Kathmandu, Nepal</address>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 <a href="#" class="copyright-link">x_asura01</a>. All
+          Right Reserved
+        </p>
+      </div>
+    </footer>
+
+    <!--
+      - #GO TO TOP
+    -->
+
+    <a href="#top" class="go-top active" aria-label="Go To Top" data-go-top>
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <script src="Assignment.js"></script>
+    <script>
+      function imgSlider(someThing) {
+        document.querySelector(".sports").src = someThing;
+      }
+      function changeColor(color) {
+        const sec = document.querySelector(".home");
+        sec.style.background = color;
+      }
+    </script>
+    <!--
+      - ionicon link
+    -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

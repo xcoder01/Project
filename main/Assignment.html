@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's Develop</title>
+  <link rel="stylesheet" href="Assignment.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+<div>
+  <section class="home" id="Home">
+    <header>
+      <div class="header-content">
+        <a href="#" class="logo" style="padding: 0 100px;">
+          <img src="/main/image/Ahjin.jpg" alt="Logo" style="height: 40px; width: 50px;">
+          Ahjin
+        </a>
+        <nav class="navbar" style="padding: 0px 100px;">
+          <ul class="Nav">
+            <li><a href="/main/Assignment.html" class="Navbar-link" data-Navbar-link>Home</a></li>
+            <li><a href="#Achivements" class="Navbar-link" data-Navbar-link>Achivements</a></li>
+            <li><a href="/Blog/sports.html" class="Navbar-link" data-Navbar-link>Blog</a></li>
+            <li><a href="/Schedule/Schedule.html" class="Navbar-link" data-Navbar-link>Event</a></li>
+            <li><a href="/Contact Us/Contact.html" class="Navbar-link" data-Navbar-link>Contact Us</a></li>
+            <li><a href="/Developers Details/index.html" class="Navbar-link" data-Navbar-link>About Us</a></li>
+            <li><a href="/Login And Signup/login.html" class="Navbar-link" data-Navbar-link>Login/Signup</a></li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="secondary-nav">
+        <ul>
+          <li><a href="/facilites/new/Facilites.html">Facilities</a></li>
+          <li><a href="/Schedule/Schedule.html">Schedules</a></li>
+          <li><a href="/Teams/team.html">Teams</a></li>
+          <li><a href="/Certification/certification.html">Certification Program</a></li>
+          <li><a href="/Historical-Moments/history.html">Historical Matches</a></li>
+          <li><a href="/Gallary/gallary.html">Photo Gallery</a></li>
+          <li><a href="/Sponsorship/sponsorship.html">Sponsorship</a></li>
+          <li><a href="/FAQs/FAQs.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content-1">
+      <div class="textBox">
+        <h2 style="font-size: 50px;">Let's Begin<br><span style="font-size: 100px;">The Journey</span></h2>
+        <h1 style="font-style: oblique; font-weight: bold; color: rgb(0, 0, 0);">Quotes</h1>
+        <div class="element"><span id="element"></span></div>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+          var typed = new Typed('#element', {
+            strings: ['“I don’t count my situps. I only start counting once it starts hurting. ” -Muhammad Ali', '“I’ve failed over and over again in my life. And that is why I succeed.” – Michael Jordan', '“Wisdom is always an overmatch for strength.” – Phil Jackson'],
+            typeSpeed: 50,
+            loop: true
+          });
+        </script>
+      </div>
+      <div class="imgBox">
+        <img src="image\2.png" alt="" class="sports" style="width: 600px;">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="image\1.png" onclick="imgSlider('image/1.png'); changeColor('#A39600');"></li>
+      <li><img src="image\4.png" onclick="imgSlider('image/4.png'); changeColor('#22BCBF');"></li>
+      <li><img src="image\3.png" onclick="imgSlider('image/3.png'); changeColor('#7B2836');"></li>
+    </ul>
+  </section>
+<!-- Calender -->
+<div class="Calendar" >
+  <h2 class="h2 section-title underline" id="Calendar">Calendar</h2>
+  <div class="loader">
+    <svg xml:space="preserve" viewBox="0 0 80 80" height="80px" width="80px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1" class="clock">  <image href="data:image/png;base64,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" y="0" x="0" height="80" width="80" id="image0"></image>
+    </svg>
+    <div class="stage"></div>
+    <div class="hold">
+      <div class="ball"></div>
+    </div>
+  </div>
+    <div class="message" id="message">Good Morning!</div>
+    <div class="datetime" id="datetime"></div>
+    <a href="/Schedule/Schedule.html" style="display: flex; justify-content: center; padding-top: 60px;">
+    <button class="button" >
+        View More
+        <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+          <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
+        </svg>
+      </button>
+    </a>
+</div>
+
+<!-- News -->
+<section class="section service" id="Event" style="background-color: rgb(245, 248, 248);">
+  <h2 class="h2 section-title underline">Event</h2>
+  <div class="container">
+
+    <ul class="service-list">
+
+      <li>
+        <div class="service-card">
+
+          <div class="image-0">
+            <img src="/main/image/Argentina.jpg" alt="Argentina" style="padding-left: 75px;">
+          </div>
+
+          <h3 class="h3 title">Argentina</h3>
+
+          <p class="text">
+            Goal: 3 <br>
+            Penalty: 4
+          </p>
+        </div>
+      </li>
+      <div style="display: flex; align-items: center;">
+      <div class="service-card" style="height: 10px; width: 10px; display: flex; justify-content: center; align-items: center;">VS</div>
+      </div>
+      <li>
+        <div class="service-card">
+
+          <div class="image-0">
+            <img src="/main/image/France.jpg" alt="France" style="padding-left: 75px;">
+          </div>
+
+          <h3 class="h3 title">France</h3>
+
+          <p class="text">
+            Goal: 3 <br>
+            Penalty: 2
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <a href="/Schedule/Schedule.html" style="display: flex; justify-content: center; padding-top: 60px;">
+    <button class="button">
+      More Info
+      <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+        <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
+      </svg>
+    </button>
+  </a>
+</section>
+
+<!-- Details of Developers -->
+<h2 class="h2 section-title underline" style="padding-top: 20px;">Our Developers</h2>
+<section style="padding-left: 250px;">
+<main class="page-content">
+<div class="card">
+  <div class="content">
+    <h2 class="title">Prabin Basnet</h2>
+    <p class="copy">Web Developer, Civil Engineer, Artist.</p>
+  </div>
+</div>
+<div class="card">
+  <div class="content">
+    <h2 class="title">Lajja Shrestha</h2>
+    <p class="copy">UI/UX designer, Artist.</p>
+  </div>
+</div>
+<div class="card">
+  <div class="content">
+    <h2 class="title">Devaki Tamang</h2>
+    <p class="copy">Researcher, Developer.</p>
+  </div>
+</div>
+</main>
+</section>
+
+<!-- Achivements -->
+<section class="section about" id="about" style="background-color: rgb(245, 248, 248);">
+  <h2 class="h2 section-title underline" id="Achivements">Achivements</h2>
+  <div class="container">
+    <div class="about-content">
+      <p class="about-text">This Project is done for our personal growth as a developer.</p>
+      <p class="about-text">We are a team of 3 developers who are working on this project.</p>
+      <ul class="stats-list">
+        <li class="stats-card">
+          <p class="h3 stats-title">2</p>
+          <p class="stats-text">Project Completed</p>
+        </li>
+        <li class="stats-card">
+          <p class="h3 stats-title">0</p>
+          <p class="stats-text">Project Lunched</p>
+        </li>
+        <li class="stats-card">
+          <p class="h3 stats-title">1</p>
+          <p class="stats-text">Months Completed</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <!-- blog -->
+  <section class="section blog" id="blog">
+    <h2 class="h2 section-title underline" id="Blog">Our Blog</h2>
+  
+    <div class="container">
+
+      <ul class="blog-list">
+
+        <li>
+          <div class="blog-card">
+
+            <figure class="banner">
+              <a href="/Basketball/basketball.html">
+                <img loading="lazy" decoding="async" src="image\Basketball.jpg" width="200" height="350" loading="lazy"
+                  alt="Basketball" class="img-cover">
+              </a>
+            </figure>
+
+            <div class="content-2">
+
+              <h3 class="h3 title">
+                <a href="#">
+                  Basketball
+                </a>
+              </h3>
+
+              <p class="text">
+                Basketball is a popular team sport where two teams, typically consisting of five players each, compete
+                to score points by shooting a ball through the opponent's hoop. The game is played on a rectangular
+                court, and the hoop is mounted 10 feet high on a backboard at each end.
+              </p>
+
+              <div class="meta">
+
+                <div class="publish-date">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="2023-03-07">27 july, 2024</time>
+                </div>
+
+                <a href="" class="comment"><ion-icon name="chatbubble-outline"></ion-icon></a>
+
+                <data value="15">15</data>
+                </button>
+
+                <a href="" class="share"><ion-icon name="share-social-outline"></ion-icon></a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="blog-card">
+
+            <figure class="banner">
+              <a href="#">
+                <img loading="lazy" decoding="async" src="image\Football.jpg" width="190" height="350" loading="lazy"
+                  alt="Football" class="img-cover">
+              </a>
+            </figure>
+
+            <div class="content-2">
+
+              <h3 class="h3 title">
+                <a href="#">
+                  Football
+                </a>
+              </h3>
+
+              <p class="text">
+                Football is a globally popular team sport with several variations, including association football
+                (soccer), American football, Canadian football, Australian rules football, and rugby football. Each
+                variation has its own unique rules and characteristics.
+              </p>
+
+              <div class="meta">
+
+                <div class="publish-date">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="2023-03-07">27 july, 2024</time>
+                </div>
+
+                <a href="" class="comment"><ion-icon name="chatbubble-outline"></ion-icon></a>
+
+                <data value="15">15</data>
+                </button>
+
+                <a href="" class="share"><ion-icon name="share-social-outline"></ion-icon></a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+  </section>
+
+<!-- footer -->
+<footer class="footer" id="Contact">
+
+  <div class="footer-top section">
+    <div class="container">
+      <div class="footer-brand">
+        <a href="#" class="logo">Team</a>
+        <p class="text">Ahjin</p>
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer-list">
+        <li>
+          <p class="footer-list-title">Our links</p>
+        </li>
+        <li><a href="#" class="footer-link">Home</a></li>
+        <li><a href="#" class="footer-link">Achivements</a></li>
+        <li><a href="#" class="footer-link">Blog & News</a></li>
+        <li><a href="#" class="footer-link">Hall of Fames</a></li>
+        <li><a href="#" class="footer-link">Tickets</a></li>
+        <li><a href="#" class="footer-link">Live</a></li>
+        <li><a href="#" class="footer-link">Tickets</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li>
+          <p class="footer-list-title">Other links</p>
+        </li>
+        <li><a href="#" class="footer-link">FAQ</a></li>
+        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+        <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+        <li><a href="#" class="footer-link">Support</a></li>
+      </ul>
+      <ul class="footer-list">
+        <li>
+          <p class="footer-list-title">Contact Us</p>
+        </li>
+        <li class="footer-item">
+          <div class="footer-item-icon">
+            <ion-icon name="call"></ion-icon>
+          </div>
+          <div>
+            <a href="tel:+977-9749341049" class="footer-item-link">+977-9749341049</a>
+          </div>
+        </li>
+        <li class="footer-item">
+          <div class="footer-item-icon">
+            <ion-icon name="mail"></ion-icon>
+          </div>
+          <div>
+            <a href="mailto:Asura7.42.999@gmail.com" class="footer-item-link">Asura7.42.999@gmail.com</a>
+          </div>
+        </li>
+        <li class="footer-item">
+          <div class="footer-item-icon">
+            <ion-icon name="location"></ion-icon>
+          </div>
+          <address class="footer-item-link">
+            Kathmandu, Nepal
+          </address>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="copyright">
+      &copy; 2024 <a href="#" class="copyright-link">x_asura01</a>. All Right Reserved
+    </p>
+  </div>
+  
+</footer>
+
+  <!--
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+  <script src="Assignment.js"></script>
+  <script>
+    function imgSlider(someThing) {
+      document.querySelector('.sports').src = someThing;
+    }
+    function changeColor(color) {
+      const sec = document.querySelector('.home');
+      sec.style.background = color;
+    }
+  </script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+</div>
+</body>
+
+</html>
